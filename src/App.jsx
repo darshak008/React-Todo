@@ -1,17 +1,21 @@
 import InputField from "./Components/InputField";
-import Tags from "./Components/Tags";
+import Headings from "./Components/Headings";
 import TodoContainer from "./Components/TodoContainer";
+import Tags from "./Components/Tags";
+import Tasks from "./Components/Tasks";
 
 function App() {
   return (
     <>
       <div className="flex gap-20 justify-center items-center bg-linear-to-br from-gray-900 via-purple-900 to-violet-800 text-slate-50 h-screen">
         <TodoContainer>
-          <Tags tag="Add New Task" />
+          <Headings tag="Add New Task" />
           <InputField />
         </TodoContainer>
         <TodoContainer>
-          <Tags tag="What To Do?" />
+          <Headings tag="What To Do?" />
+          <Tags tag="Sample Tag" />
+          <Tasks />
         </TodoContainer>
       </div>
     </>
